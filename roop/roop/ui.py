@@ -225,7 +225,6 @@ def toggle_preview() -> None:
         PREVIEW.unbind('<Right>')
         PREVIEW.unbind('<Left>')
         PREVIEW.withdraw()
-        clear_predictor()
     elif roop.globals.source_path and roop.globals.target_path:
         init_preview()
         update_preview(roop.globals.reference_frame_number)
@@ -250,8 +249,6 @@ def init_preview() -> None:
 def update_preview(frame_number: int = 0) -> None:
     if roop.globals.source_path and roop.globals.target_path:
         temp_frame = get_video_frame(roop.globals.target_path, frame_number)
-        if predict_frame(temp_frame):
-            sys.exit()
         source_face = get_one_face(cv2.imread(roop.globals.source_path))
         if not get_face_reference():
             reference_frame = get_video_frame(roop.globals.target_path, roop.globals.reference_frame_number)
