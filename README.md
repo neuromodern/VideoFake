@@ -1,5 +1,7 @@
 # VideoFake / Face Swap & Face Enhance Video Colab (English) based on Roop without NSFW filter
 
+UPD feb 13 2025: [NVIDIA CUDA dependency for GPU an Model host](https://github.com/neuromodern/VideoFake/releases/tag/1.0.1).
+
 UPD: Curent models url is updated (inswapper_128.onnx & GFPGANv1.4.pth). Pipeline was optimized for faster work. NSFW filter deleted.
 
 This repository is a comprehensive collection of code and resources that allow you to perform face swapping and face enhancement on videos using Google Colab. With the power of deep learning and computer vision algorithms, this project enables you to seamlessly swap faces between individuals in a video and enhance facial features for a more visually appealing result.
